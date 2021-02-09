@@ -11,17 +11,53 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="imgs/png" href="imgs/favicon.png"/>
-    
+    <link rel="icon" type="imgs/png" href="imgs/favicon.png"/>    
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="imgs/favicon.png">
+      <a href="#">Han</a>
+    </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+  </nav>
+  <!-- About -->
+  <section id="about"></section>
+  <!-- Skills -->
+  <section id="skills"><div class="section__title"><span></span></div></section>
+  <!-- Work -->
+  <section id="work"><div class="section__title"><span></span></div></section>
+  <!-- Contact -->
+  <section id="contact"><section__title><span></span></section__title></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
+    
     <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
@@ -41,15 +77,15 @@
             </li>            
         </ul>
     </header>
-    <!-- End header -->
+    
 
     <div id="lead">
         <div id="lead-content">
             <h1>HanYeJi</h1>
             <h2>신입개발자 한예지입니다.</h2>
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
+            <a href="#" class="btn-rounded-white">Download Resume</a>
         </div>
-        <!-- End #lead-content -->
+        
 
         <div id="lead-overlay"></div>
 
@@ -58,9 +94,9 @@
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
-        <!-- End #lead-down -->
+        
     </div>
-    <!-- End #lead -->
+    
 
     <div id="about">
         <div class="container">
@@ -76,7 +112,7 @@
             </div>
         </div>
     </div>
-    <!-- End #about -->
+    
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
@@ -91,37 +127,7 @@
             <li>Oracle</li>
         </ul>
     </div>
-    <!-- End #skills -->
-
-    <!-- <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div> -->
-    <!-- End #experience -->
+    
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -131,7 +137,7 @@
                     <div class="project-image">
                         <img src="images/Cozima.jpg" />
                     </div>
-                    <!-- End .project-image -->
+                    
                     <div class="project-info">
                         <h3>반응형 레스토랑 사이트 Cozima</h3>
                         <p style="width: 600px;">
@@ -141,15 +147,15 @@
                         </p>
                         <a href="pdf/Cozimapdf.pdf">View Project</a>
                     </div>
-                    <!-- End .project-info -->
+                    
                 </div>
-                <!-- End .project -->
+                
 
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/MemoryDragon.jpg" />
                     </div>
-                    <!-- End .project-image -->
+                    
                     <div class="project-info">
                         <h3>영어 암기 학습 사이트 암기용</h3>
                         <p style="width: 600px;">
@@ -157,13 +163,13 @@
                         </p>
                         <a href="pdf/MemoryDragonpdf.pdf">View Project</a>
                     </div>
-                    <!-- End .project-info -->
+                    
                 </div>
-                <!-- End .project -->
+                
             </div>
         </div>
     </div>
-    <!-- End #projects -->
+    
 
 
     <div id="education">
@@ -176,9 +182,9 @@
                 웹 프론트엔드 및 백엔드의 전반적인 내용을 교육
             </p>
         </div>
-        <!-- End .education-block -->
+        
     </div>
-    <!-- End #education -->
+    
 
     <footer>
         <div class="container" >
@@ -206,10 +212,9 @@
             </div>
         </div>
     </footer>
-    <!-- End footer -->
+    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+ -->
 </body>
 
 </html>
