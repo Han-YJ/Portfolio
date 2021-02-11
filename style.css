@@ -13,6 +13,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-dark-blue: #2b5268;
 
   /* Font size */
   --font-large: 48px;
@@ -47,8 +48,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -86,7 +97,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-blue);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -120,4 +131,30 @@ p {
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
   border-radius: 4px;
+}
+
+/* Home */
+#home {
+  background-color: var(--color-dark-blue);
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+}
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
