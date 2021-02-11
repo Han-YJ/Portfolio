@@ -12,117 +12,166 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="imgs/png" href="imgs/favicon.png"/>    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav id="navbar">
     <div class="navbar__logo">
       <img src="imgs/favicon.png">
       <a href="#">Han</a>
     </div>
+    <div class="navbar__menu">    
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item active">Home</li>
         <li class="navbar__menu__item">About</li>
         <li class="navbar__menu__item">Skills</li>
         <li class="navbar__menu__item">My work</li>
         <li class="navbar__menu__item">Contact</li>
       </ul>
+    </div>
   </nav>
   <!-- Home -->
   <section id="home">
-    <h1 class="home__title">Hello, <br />I'm Han Yeji</h1>
-    <h2 class="home__description"></h2>
+    <img src="imgs/home-profile-img.png" alt="profile img" class="home__avatar">
+    <h1 class="home__title">Hello, <br />I'm Yeji</h1>
+    <h3 class="home__description">풀스택 개발자를 목표로 열심히 배우며 성장하고 있습니다.</h3>
     <button class="home__contact">Contact</button>
   </section>
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section section__container">
     <h1>About me</h1>
     <p></p>
     <div class="about__majors">
       <div class="major">
-        <div class="major__icon"></div>      
-        <div class="major__title"></div>
-        <div class="major__description"></div>    
+        <div class="major__icon"><i class="fab fa-html5"></i></div>      
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">HTML, CSS, JavaScript</div>    
+      </div>
+      <div class="major">
+        <div class="major__icon"><i class="fas fa-server"></i></div>      
+        <h2 class="major__title">Back-end</h2>
+        <div class="major__description">Java, Javascript, SpringFramework, Oracle</div>    
+      </div>
+      <div class="major">
+        <div class="major__icon"><i class="fas fa-mobile-alt"></i></div>      
+        <h2 class="major__title">Mobile</h2>
+        <div class="major__description">Java</div>    
       </div>
     </div>
     <div class="about__education">
-      <img class="education__logo"></img>
-      <div class="education__name"></div>
-      <div class="education__period"></div>
+      <div class="education">
+        <div class="education__logo"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="education__description">
+          <p class="education__name">자바 기반의 Full-Stack 개발자 양성 과정 수료
+            <br/>웹 프론트엔드 및 백엔드의 전반적인 내용을 교육
+          </p>
+          <p class="education__period">2020.04 - 2020.10</p>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Skills -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p></p>
-    <div class="skillset">
-      <div class="skiilset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill_description">
-            <span>HTML</span>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p></p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>javaScript</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Java</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>SpringFramework</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>jquery</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Oracle</span>
+              <span></span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 60%;"></div>
+            </div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>CSS</span>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio code</span></li>
+              <li><span>Eclipse</span></li>
+              <li><span>Android Studio Code</span></li>
+            </ul>
           </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>javaScript</span>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>Java</span>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>SpringFramework</span>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>jquery</span>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill_description">
-            <span>Oracle</span>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Photoshop</span></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio code</span></li>
-            <li><span>Eclipse</span></li>
-            <li><span>Android Studio Code</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-            <li><span>Photoshop</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </div>    
   </section>
   <!-- Work -->
-  <section id="work">
+  <section id="work" class="section section__container">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn">All</button>
+      <button class="category__btn active">All</button>
       <button class="category__btn">Web</button>
       <button class="category__btn">Mobile</button>
     </div>
@@ -131,27 +180,28 @@
         <img class="project__img" src="imgs/Cozima.jpg" alt="project-img">
         <div class="project__description">
           <h3>레스토랑 예약사이트 Cozima</h3>
-          <span>예약이 가능한 레스토랑사이트와 관리자 사이트</span>
+          <span>Parallax Scrolling과 Media Query를 적용한 <br> 반응형 레스토랑 홈페이지<br />
+            예약이 가능하며, 관리자 페이지를 통해 <br/>리뷰와 예약 빈도를 확인하여 분석 가능</span>
         </div>
       </a>
       <a href="" class="project" target="blank">
         <img class="project__img" src="imgs/MemoryDragon.jpg" alt="project-img">
         <div class="project__description">
           <h3>영단어 암기사이트 암기용</h3>
-          <span>여러 학습을 통해 영단어를 암기하고, 나만의 펫을 만들어 성장시키며 공부하는 사이트.</span>
+          <span>여러 학습을 통해 영단어를 암기하고,<br>나만의 펫을 만들어 성장시키며 공부하는 사이트</span>
         </div>
       </a>
     </div>
   </section>
   <!-- Contact -->
-  <section id="contact">
-    <h1 class="contact__title"></h1>
-    <h2 class="contact__email"></h2>
+  <section id="contact" class="section">
+    <h1 class="contact__title">Contact</h1>
+    <h2 class="contact__email">lucirhk@gmailcom</h2>
     <div class="contact__links">
-      <a href="">
+      <a href="https://github.com/Han-YJ">
         <i class="fab fa-github"></i>
       </a>
-      <a href="#">
+      <a href="https://luce-in-altis-0509.tistory.com/">
         <i class="fas fa-blog"></i>
       </a>
     </div>
@@ -159,182 +209,6 @@
       2021 Han Yeji - All rights reserved
     </p>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>            
-        </ul>
-    </header>
-    
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>HanYeJi</h1>
-            <h2>신입개발자 한예지입니다.</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
-        </div>
-        
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        
-    </div>
-    
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        풀스택 개발자를 목표로 열심히 배우며 성장하고 있습니다. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Spring Framework</li>
-            <li>Node.js</li>
-            <li>Oracle</li>
-        </ul>
-    </div>
-    
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/Cozima.jpg" />
-                    </div>
-                    
-                    <div class="project-info">
-                        <h3>반응형 레스토랑 사이트 Cozima</h3>
-                        <p style="width: 600px;">
-                            Parallax Scrolling과 Media Query를 적용한 반응형 레스토랑 홈페이지.
-                            <br>
-                            예약이 가능하며 관리자 페이지를 통해 리뷰와 예약 빈도를 확인하여 분석 가능
-                        </p>
-                        <a href="pdf/Cozimapdf.pdf">View Project</a>
-                    </div>
-                    
-                </div>
-                
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/MemoryDragon.jpg" />
-                    </div>
-                    
-                    <div class="project-info">
-                        <h3>영어 암기 학습 사이트 암기용</h3>
-                        <p style="width: 600px;">
-                            여러 학습을 통해 영단어를 암기하고, 나만의 펫을 만들어 성장시키며 공부하는 사이트.
-                        </p>
-                        <a href="pdf/MemoryDragonpdf.pdf">View Project</a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    
-
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>자바 기반의 Full-Stack 개발자 양성 과정</h3>
-            <span class="education-date">2020.04 - 2020.10</span>
-            <h4>한국아이티인재개발학원</h4>
-            <p>
-                웹 프론트엔드 및 백엔드의 전반적인 내용을 교육
-            </p>
-        </div>
-        
-    </div>
-    
-
-    <footer>
-        <div class="container" >
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 Han Ye Ji
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/lacus92" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://luce-in-altis-0509.tistory.com/" target="_blank"><i class="fas fa-blog" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-
- -->
 </body>
 
 </html>
