@@ -165,12 +165,14 @@ p {
   padding: 40px;
   padding-top: 100px;
   text-align: center;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .home__avatar {
   width: 250px;
   height: 250px;
 }
+
 .home__title,
 .home__description {
   color: var(--color-white);
