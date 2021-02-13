@@ -176,16 +176,18 @@ p {
   color: var(--color-white);
 }
 
+.home__pdf,
 .home__contact {
   color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  margin: 24px;
+  margin: 24px 10px;
   padding: 8px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
+.home__pdf:hover,
 .home__contact:hover {
   background-color: var(--color-dark-pink);
 }

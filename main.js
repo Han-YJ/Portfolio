@@ -40,6 +40,13 @@ function scrollIntoView(selector) {
   scrollTo.scrollIntoView({behavior: "smooth"});
 }
 
+//Open pdf file when click Portfolio.pdf btn
+const portfolioBtn = document.querySelector('.home__pdf');
+const filePath = 'pdf/Portfolio.pdf';
+portfolioBtn.addEventListener('click', () => {
+  window.open(filePath, '_blank');
+})
+
 //Make home transparent when it is scrolling down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
