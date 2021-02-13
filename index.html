@@ -178,24 +178,31 @@
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn active">All</button>
-      <button class="category__btn">Web</button>
-      <button class="category__btn">Mobile</button>
+      <button class="category__btn active" data-filter="*">All</button>
+      <button class="category__btn" data-filter="web">Web</button>
+      <button class="category__btn" data-filter="mobile">Mobile</button>
     </div>
     <div class="work__projects">
-      <a href="" class="project" target="blank">
-        <img class="project__img" src="imgs/Cozima.jpg" alt="project-img">
+      <a href="" class="project" target="blank" data-type="web">
+        <img class="project__img" src="imgs/Cozima.png" alt="project-img">
         <div class="project__description">
           <h3>레스토랑 예약사이트 Cozima</h3>
           <span>Parallax Scrolling과 Media Query를 적용한 <br> 반응형 레스토랑 홈페이지<br />
             예약이 가능하며, 관리자 페이지를 통해 <br/>리뷰와 예약 빈도를 확인하여 분석 가능</span>
         </div>
       </a>
-      <a href="" class="project" target="blank">
-        <img class="project__img" src="imgs/MemoryDragon.jpg" alt="project-img">
+      <a href="https://github.com/chuseok/Final" class="project" target="blank" data-type="web">
+        <img class="project__img" src="imgs/memory-web.png" alt="project-img">
         <div class="project__description">
           <h3>영단어 암기사이트 암기용</h3>
-          <span>여러 학습을 통해 영단어를 암기하고,<br>나만의 펫을 만들어 성장시키며 공부하는 사이트</span>
+          <span>여러 학습을 통해 영단어를 암기하고,<br>나만의 펫을 만들어 성장시키며 공부하는 웹사이트</span>
+        </div>
+      </a>
+      <a href="https://github.com/chuseok/Final" class="project" target="blank" data-type="mobile">
+        <img class="project__img" src="imgs/memory-mobile.png" alt="project-img">
+        <div class="project__description">
+          <h3>암기용 / 앱</h3>
+          <span>여러 학습을 통해 영단어를 암기하고,<br>나만의 펫을 만들어 성장시키며 공부하는 앱</span>
         </div>
       </a>
     </div>
