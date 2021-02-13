@@ -14,6 +14,9 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --color-dark-blue: #2b5268;
+  --color-light-blue: #C2CDD3;
+  --color-medium-blue: #496A7D;
+  --color-light-greyblue: #7D94A2;
   --color-yellow: #ffd350;
 
   /* Font size */
@@ -137,6 +140,15 @@ p {
   border-radius: 4px;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background-color: var(--color-dark-blue);
@@ -248,7 +260,7 @@ p {
 
 .skillset {
   display: flex;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-light-greyblue);
   color: var(--color-light-white);
 }
 
@@ -258,7 +270,7 @@ p {
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-blue);
   padding: 20px 40px
 }
 
@@ -287,7 +299,7 @@ p {
 }
 
 .tools {
-  background-color: var(--color-grey);
+  background-color: var(--color-medium-blue);
 }
 
 .tools,
@@ -405,4 +417,39 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
 }
