@@ -1,6 +1,6 @@
 # Portfolio
 
-To view a portfolio, [click here](https://lacus92.github.io/Portfolio/).
+To view a portfolio, [click here](https://han-yj.github.io/Portfolio/).
 
 ## Projects
 ### 반응형 레스토랑 사이트 Cozima
