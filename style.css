@@ -14,6 +14,7 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --color-dark-blue: #2b5268;
+  --color-darkest-blue: #224253 ;
   --color-light-blue: #C2CDD3;
   --color-medium-blue: #496A7D;
   --color-light-greyblue: #7D94A2;
@@ -102,12 +103,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-dark-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-darkest-blue);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -153,6 +162,7 @@ p {
 #home {
   background-color: var(--color-dark-blue);
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
