@@ -39,4 +39,19 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   const opacity = 1 - window.scrollY / homeHeight;
   home.style.opacity = opacity;
+});
+
+//Show pageUp button when scroll down
+const pageUpBtn = document.querySelector('.pageUpBtn');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > (homeHeight / 2)) {
+    pageUpBtn.classList.add('visible');
+  } else {
+    pageUpBtn.classList.remove('visible');
+  }
+});
+
+//Scroll up when click Arrow up button
+pageUpBtn.addEventListener('click', () => {
+  scrollIntoView('#home');
 })
