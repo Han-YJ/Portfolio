@@ -62,10 +62,15 @@ const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 categoryContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter;
-  console.log(filter);
   if (filter == null) {
     return;
   }
+
+  //Remove selection and select the new one
+  const select = document.querySelector('.category__btn.selected');
+  select.classList.remove('selected');
+  e.target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
